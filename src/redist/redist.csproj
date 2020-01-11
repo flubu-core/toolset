@@ -37,7 +37,6 @@
   <ItemGroup>
     <ProjectReference Include="..\tool_msbuild\tool_msbuild.csproj" />
     <ProjectReference Include="..\tool_nuget\tool_nuget.csproj" />
-    <ProjectReference Include="..\dotnet\dotnet.csproj" />
   </ItemGroup>
 
   <ItemGroup>
