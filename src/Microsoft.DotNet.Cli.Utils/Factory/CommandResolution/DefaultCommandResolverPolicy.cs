@@ -42,8 +42,7 @@ namespace Microsoft.DotNet.Cli.Utils.Factory.CommandResolution
             IPublishedPathCommandSpecFactory publishedPathCommandSpecFactory)
         {
             var compositeCommandResolver = new CompositeCommandResolver();
-
-            compositeCommandResolver.AddCommandResolver(new MuxerCommandResolver());
+            
             compositeCommandResolver.AddCommandResolver(new DotnetToolsCommandResolver());
             compositeCommandResolver.AddCommandResolver(new RootedCommandResolver());
             compositeCommandResolver.AddCommandResolver(new AppBaseDllCommandResolver());
